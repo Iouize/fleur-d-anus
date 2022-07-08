@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/fleur_danus_logopetit.png" alt="Logo de Fleur d'Anus">
+			</a>
+		</div>
+		<ul>
+			<li><a href="index.html#produits">Nos Produits</a></li>
+			<li><a href="equipe.html">Qui sommes nous ?</a></li>
+			<li><a href="contact.html" class="active">Contact</a></li>
+		</ul>
+	</header>
+
+    <main class="main-contact">
+        <h2>Contact</h2>
+        <form action="">
+            <div>
+                <label for="nom" class="labels">Nom</label>
+                <input type="text" name="nom" id="nom" required>
+            </div>
+            <div>
+                <label for="mail" class="labels">Mail</label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+            <div>
+                <label for="phone" class="labels">Téléphone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="message" class="labels">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" onclick="alert('Votre message a bien été envoyé !')" >Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+		<div class="reseaux-sociaux">
+			<ul>
+				<li><a href="https://twitter.com/">
+					<img src="images/footer/twitter.png" alt="twitter">
+					</a>
+				</li>
+				<li><a href="https://www.facebook.com/">
+					<img src="images/footer/facebook.png" alt="facebook">
+					</a>
+				</li>
+				<li><a href="https://www.instagram.com/">
+					<img src="images/footer/instagram.png" alt="instagram">
+					</a>
+				</li>
+				<li><a href="https://www.linkedin.com/">
+					<img src="images/footer/linkedin.png" alt="linkedin">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="liens">
+			<li><a href="https://www.rocketlawyer.com/fr/fr/sem/site-internet-mentions-legales-et-politique-de-confidentialite?gclid=Cj0KCQjwn4qWBhCvARIsAFNAMiiJTCe8Im8cJPwXdwpH4RRdgLo1mXmfkeKSGJyOvQfDxlVAXfdSz8kaAp_7EALw_wcB">Mentions Légales</a></li>
+			<li><a href="#">Plan du site</a></li>
+			<li class="copyright"><a href="#"><img src="images/footer/copyright.png" alt="copyright"> Fleur d'Anus, 2022</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

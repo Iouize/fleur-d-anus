@@ -1,0 +1,482 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-bg-color: #FAF5EB;
+    --bg-color: #F9EFDC;
+    --dark-color: #52414C;
+    --gold-color: #D19725;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark-color);
+    background-color: var(--light-bg-color);
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/*****HEADER*****/
+
+header .logo img {
+    height: 100%;
+}
+
+
+header {
+    height: 8vh;
+    background-color: var(--dark-color);
+    color: var(--light-bg-color);
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+header a {
+    font-size: 1.25em;
+    color: var(--light-bg-color);
+}
+
+header a:hover {
+    color: var(--gold-color);
+}
+
+header .active {
+    color: var(--gold-color);
+}
+
+/**********BANNER*********/
+.banner {
+    width: 100%;
+    height: 70vh;
+    background-image: url('images/banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    color: var(--light-bg-color);
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px var(--dark-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 img {
+    width: 4vw;
+    transform: rotate(180deg);
+    margin: 0 2%;
+}
+
+.banner h2 {
+    color: var(--gold-color);
+    text-shadow: 0px 0px 1px var(--light-bg-color);
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-align: right;
+    align-self: flex-end;
+    padding-right: 20%;
+}
+
+/********CITATIONS*********/
+
+.citations {
+    white-space: pre-line;
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2em;
+}
+
+.giono {
+    align-self: flex-end;
+    font-style: italic;
+}
+
+.giono span {
+    width: 100%;
+    text-align: right;
+    font-style: normal;
+}
+
+/*********PRODUITS*********/
+
+.produits {
+    background-color: var(--dark-color);
+    color: var(--light-bg-color);
+    text-align: center;
+}
+
+.produits h2 {
+    color: var(--light-bg-color);
+    text-shadow: 2px 2px 4px var(--gold-color);
+    padding: 5%;
+    font-weight: 700;
+}
+
+.produits div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15% 5% 10%;
+}
+
+.produits img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 10%;
+    /*box-shadow: 0px 0px 13px var(--bg-color);*/
+}
+
+.produits img:hover {
+    transform: scale(1.05);
+}
+
+.produits h3 {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px var(--dark-color);
+    position: relative;
+    top: -15%;
+}
+
+/********LOGOS*********/
+
+.logos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.logos h2 {
+    padding-bottom: 5%;
+    font-weight: 700;
+    color: var(--gold-color);
+}
+
+.logos div {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logos img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+}
+
+
+/******FOOTER******/
+footer {
+    background-color: var(--bg-color);
+    display: flex;
+    height: 10vh;
+    width: 100%;
+}
+
+footer a {
+    color: var(--dark-color);
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.reseaux-sociaux {
+    padding-left: 5%;
+    width: 20%;
+}
+
+.reseaux-sociaux img {
+    width: 2.5vw;
+}
+
+footer .liens {
+    flex-grow: 2;
+}
+
+.copyright {
+    font-size: 1.15em;
+}
+
+.copyright img {
+    width: 1vw;
+}
+
+
+/***CONTACT****/
+
+.main-contact {
+    height: 82vh;
+}
+
+.main-contact h2 {
+    color: var(--gold-color);
+    text-align: center;
+    padding: 2.5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form input, form textarea {
+    background-color: var(--bg-color);
+    border: none;
+    border: 1px solid var(--gold-color);
+    border-radius: 10px;
+    padding: 1.5%;
+}
+
+label {
+    height: 5vh;
+}
+
+input {
+    width: 30vw;
+    height: 5vh;
+}
+
+textarea {
+    width: 30vw;
+    height: 20vh;
+    resize: none;
+}
+
+form div {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    height: 5vh;
+    width: 20vw;
+    border-radius: 10px;
+    background-color: var(--gold-color);
+    color: var(--bg-color);
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--light-bg-color);
+    border: 2px solid var(--gold-color);
+    color: var(--gold-color);
+}
+
+/****PRODUIT*****/
+
+.main-produit, .comment {
+    padding: 50px;
+}
+
+.product {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding: 30px;
+    height: 500px;
+}
+
+.picture img {
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+}
+
+.picture p {
+	position: relative;
+    top: -2em;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px #52414C;
+}
+
+.pills {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pills h2 {
+    text-align: left;
+	font-size: 50px;
+	color: #D19725;
+}
+
+.pills .perfume {
+	font-size: 15px;
+	color: #52414C;
+}
+
+.pills .price {
+	font-size: 50px;
+	font-weight: 20px;
+	color: #52414C;
+}
+
+.pills .power {
+	font-size: 25px;
+	color: #52414C;
+}
+
+.pills .icones {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.pills .icon {
+	font-size: 30px;
+	color: #52414C;
+}
+
+button {
+	background-color: #52414C;
+	color: white;
+	width: 100px;
+	height: 40px;
+	border-radius: 7%;
+	border-style: none;
+	font-size: 15px;
+}
+
+button a {
+	color: white;
+	text-decoration: none;
+}
+
+.comment {
+	display: flex;
+	flex-direction: column;
+	margin: 70px;
+    
+}
+
+.comment img {
+    width: 10vw;
+	border-radius: 100%;
+}
+
+.stars {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: #D19725;
+	font-size: 25px;
+	text-shadow: 1px 1px 2px #52414C ;
+}
+
+
+.comment .text p {
+	margin: 70px;
+	font-size: 20px;
+}
+
+.image p {
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	line-height: 1em;
+}
+
+.commentOne{ 
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	width: 1000px;
+}
+
+.commentTwo {
+	align-self: flex-end;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+    margin-top: 5%;
+	width: 1000px;
+}
+
+
+
+/******EQUIPE*****/
+
+.histoire {
+    padding: 10%;
+}
+
+.histoire h2, .main-contact h2 {
+    color: var(--gold-color);
+    font-size: 3.5em;
+    text-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.histoire section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.histoire .texte, .histoire h2 {
+    width: 40%;
+}
+
+.texte-photo {
+    margin-top: 10%;
+}
+
+.isa, .louise {
+    width: 30%;
+}
+
+.histoire figcaption {
+    font-style: italic;
+    font-size: smaller;
+}
+
